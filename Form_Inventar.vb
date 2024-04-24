@@ -136,7 +136,7 @@ Public Class Form_Inventar
         'DGV.CellBorderStyle = DataGridViewCellBorderStyle.None
         DGV.RowHeadersVisible = False
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -280,7 +280,7 @@ Public Class Form_Inventar
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ' -------------------- LOAD setari
 
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         Dim folder_nir As String = ""
         Try
             Dim set_sql As String = "SELECT * FROM setari WHERE setare='path_nir'"
@@ -295,7 +295,7 @@ Public Class Form_Inventar
 
                 If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
                     Dim folder As String = System.IO.Path.GetDirectoryName(SaveFileDialog1.FileName) & "\"
-                    Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                    Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                     Try
                         If dbconn.State = 0 Then
                             dbconn.Open()
