@@ -39,7 +39,7 @@ Public Class Form_verif_gestiune
         tb.Rows.Add("2. Mihai Viteazu", "MV")
         ComboBox3.DataSource = tb
 
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         Dim luna_reg As Date = Date.Parse(Date.DaysInMonth(ComboBox2.SelectedItem, ComboBox1.SelectedItem) & "." & ComboBox1.SelectedItem & "." & ComboBox2.SelectedItem)
         Dim luna_prec As Date = DateAdd(DateInterval.Month, -1, luna_reg)
         Dim data_ultima As Date = Date.Parse(Date.DaysInMonth(luna_prec.Year, luna_prec.Month) & "." & luna_prec.Month & "." & luna_prec.Year)
@@ -111,7 +111,7 @@ Public Class Form_verif_gestiune
     Private Sub ComboBox_1_2_3_DropDownClosed(sender As Object, e As EventArgs) Handles ComboBox1.DropDownClosed, ComboBox2.DropDownClosed, ComboBox3.DropDownClosed
 
         Label1.Text = MonthName(ComboBox1.SelectedItem) & " " & ComboBox2.SelectedItem
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
         Dim luna_reg As Date = Date.Parse(Date.DaysInMonth(ComboBox2.SelectedItem, ComboBox1.SelectedItem) & "." & ComboBox1.SelectedItem & "." & ComboBox2.SelectedItem)
         Dim luna_prec As Date = DateAdd(DateInterval.Month, -1, luna_reg)
