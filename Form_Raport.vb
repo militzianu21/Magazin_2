@@ -53,7 +53,7 @@ Public Class Form_Raport
         TextBox2.Clear()
 
 
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
 
         Dim luna_rap As Date = Date.Parse(Date.DaysInMonth(ComboBox2.SelectedItem, ComboBox1.SelectedItem) & "." & ComboBox1.SelectedItem & "." & ComboBox2.SelectedItem)
@@ -355,7 +355,7 @@ Public Class Form_Raport
 
         ' -------------------- LOAD setari
 
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
         Try
             Dim set_sql As String = "SELECT * FROM setari WHERE setare='path_raport_gestiune'"
@@ -370,7 +370,7 @@ Public Class Form_Raport
 
                 If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
                     Dim folder As String = System.IO.Path.GetDirectoryName(SaveFileDialog1.FileName) & "\"
-                    Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                    Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                     Try
                         If dbconn.State = 0 Then
                             dbconn.Open()
@@ -777,7 +777,7 @@ Public Class Form_Raport
 
         'Try
         '------------solduri luna RAPORT
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = ConnectionState.Closed Then
                 dbconn.Open()
             End If
@@ -901,7 +901,7 @@ Public Class Form_Raport
     End Sub
     Private Sub ComboBox3_DropDownClosed(sender As Object, e As EventArgs) Handles ComboBox3.DropDownClosed
         Label1.Text = MonthName(ComboBox1.SelectedItem) & " " & ComboBox2.SelectedItem
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
         Dim luna_rap As Date = Date.Parse(Date.DaysInMonth(ComboBox2.SelectedItem, ComboBox1.SelectedItem) & "." & ComboBox1.SelectedItem & "." & ComboBox2.SelectedItem)
         Dim luna_prec As Date = DateAdd(DateInterval.Month, -1, luna_rap)
@@ -950,7 +950,7 @@ Public Class Form_Raport
 
         Label1.Text = MonthName(ComboBox1.SelectedItem) & " " & ComboBox2.SelectedItem
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
             Dim sql_read As String = "SELECT * FROM solduri_gestiune WHERE data=@data AND magazin='" & ComboBox3.SelectedValue & "'"
 
