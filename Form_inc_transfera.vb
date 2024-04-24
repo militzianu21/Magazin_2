@@ -10,7 +10,7 @@ Public Class Form_inc_transfera
     Private Sub save_Bu_Click(sender As Object, e As EventArgs) Handles save_Bu.Click
         Application.CurrentCulture = New CultureInfo("ro-RO")
         Thread.CurrentThread.CurrentUICulture = New CultureInfo("ro-RO")
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         Dim sql As String = "UPDATE incasari SET suma_cash=@suma_cash,suma_card=@suma_card WHERE id=@id"
         Try
             If dbconn.State = 0 Then
