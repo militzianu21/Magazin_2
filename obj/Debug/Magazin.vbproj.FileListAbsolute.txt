@@ -1,0 +1,91 @@
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\Magazin.exe.config
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\Magazin.exe
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\Magazin.pdb
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\Magazin.xml
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\System.Data.DataSetExtensions.dll
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\System.Data.dll
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\System.Deployment.dll
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\System.dll
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\System.Drawing.dll
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\System.Windows.Forms.dll
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\System.Xml.dll
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\System.Xml.Linq.dll
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.xml
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_verif_gestiune.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_afiseaza_nir.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_adauga_nir.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_inc_transfera.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_NIRuri.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_Aviz.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_firme_introd.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_Raport.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_gestiune.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_input.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_principal.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_DI.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_Incasari.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_cheltuieli.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_Registru.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_setari.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_verif_casa.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Resources.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.vbproj.GenerateResource.Cache
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.exe
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.xml
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.pdb
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_adauga_factura.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_Bon.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.Form_aleg_Plata.resources
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\Functii.vb
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\bin\Debug\MySqlBackup.dll
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.vbprojAssemblyReference.cache
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.vbproj.CoreCompileInputs.cache
+C:\Users\mili\Documents\Visual Studio 2012\Projects\Magazin\Magazin\obj\Debug\Magazin.vbproj.CopyComplete
+D:\Proiecte VB\Magazin\Magazin\bin\Debug\Functii.vb
+D:\Proiecte VB\Magazin\Magazin\bin\Debug\Magazin.exe.config
+D:\Proiecte VB\Magazin\Magazin\bin\Debug\Magazin.exe
+D:\Proiecte VB\Magazin\Magazin\bin\Debug\Magazin.pdb
+D:\Proiecte VB\Magazin\Magazin\bin\Debug\Magazin.xml
+D:\Proiecte VB\Magazin\Magazin\bin\Debug\System.ComponentModel.DataAnnotations.dll
+D:\Proiecte VB\Magazin\Magazin\bin\Debug\System.Data.DataSetExtensions.dll
+D:\Proiecte VB\Magazin\Magazin\bin\Debug\System.Data.dll
+D:\Proiecte VB\Magazin\Magazin\bin\Debug\System.Deployment.dll
+D:\Proiecte VB\Magazin\Magazin\bin\Debug\System.dll
+D:\Proiecte VB\Magazin\Magazin\bin\Debug\System.Drawing.dll
+D:\Proiecte VB\Magazin\Magazin\bin\Debug\System.Windows.Forms.dll
+D:\Proiecte VB\Magazin\Magazin\bin\Debug\System.Xml.dll
+D:\Proiecte VB\Magazin\Magazin\bin\Debug\System.Xml.Linq.dll
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.vbproj.AssemblyReference.cache
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.vbproj.SuggestedBindingRedirects.cache
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_adauga_obinv.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_afiseaza_obinv.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_Bon.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_adauga_factura.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_aleg_Plata.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_verif_gestiune.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_afiseaza_nir.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_adauga_nir.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_inc_transfera.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_NIRuri.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_Aviz.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_firme_introd.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_Raport.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_gestiune.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_input.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_principal.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_DI.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_Incasari.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_cheltuieli.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_Registru.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_setari.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_verif_casa.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Resources.resources
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.vbproj.GenerateResource.cache
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.vbproj.CoreCompileInputs.cache
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.vbproj.CopyComplete
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.exe
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.xml
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.pdb
+D:\Proiecte VB\Magazin\Magazin\obj\Debug\Magazin.Form_Inventar.resources
