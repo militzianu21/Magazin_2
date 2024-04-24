@@ -6,7 +6,7 @@ Public Class Form_Aviz
     Public dbcomm As New MySqlCommand
     Public dbread As MySqlDataReader
     Private Sub Form_Aviz_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         Dim sql_read As String = "SELECT nr_nir,data,tip_document FROM intrari WHERE tip_document='NIR' ORDER BY data DESC,nr_nir DESC LIMIT 1"
         Try
             If dbconn.State = ConnectionState.Closed Then
@@ -46,7 +46,7 @@ Public Class Form_Aviz
             ElseIf yesno = DialogResult.Yes Then
             End If
         End If
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         Dim sql As String = "INSERT INTO intrari(data,tip_document,nr_nir,explicatii,suma,magazin) " _
                             & "VALUES(@data,@tip_document,@nr_nir,@explicatii,@suma,@magazin)"
         Try
