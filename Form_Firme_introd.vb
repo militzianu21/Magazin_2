@@ -9,7 +9,7 @@ Public Class Form_firme_introd
 
         Me.KeyPreview = True
 
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         dbcomm = New MySqlCommand("SELECT forma_juridica, count(forma_juridica) FROM firme GROUP BY forma_juridica ORDER BY count(forma_juridica) DESC", dbconn)
         If dbconn.State = ConnectionState.Closed Then
             dbconn.Open()
