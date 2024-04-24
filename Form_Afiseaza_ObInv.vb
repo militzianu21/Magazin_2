@@ -22,7 +22,7 @@ Public Class Form_afiseaza_obinv
         Thread.CurrentThread.CurrentUICulture = New CultureInfo("ro-RO")
         ' -------------------- LOAD setari
 
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
         Try
             Dim set_sql As String = "SELECT * FROM setari WHERE setare='path_nir'"
@@ -37,7 +37,7 @@ Public Class Form_afiseaza_obinv
 
                 If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
                     Dim folder As String = System.IO.Path.GetDirectoryName(SaveFileDialog1.FileName) & "\"
-                    Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                    Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                     Try
                         If dbconn.State = 0 Then
                             dbconn.Open()
@@ -100,7 +100,7 @@ Public Class Form_afiseaza_obinv
             nir_TB.Enabled = False
         End If
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
             Dim sql_tot As String = "SELECT obiecte_inventar.id,obiecte_inventar.produs,obiecte_inventar.bucati,obiecte_inventar.pret,obiecte_inventar.pret_intrare,obiecte_inventar.data,niruri_obiecte.tva,niruri_obiecte.nr_factura,niruri_obiecte.cif_firma,niruri_obiecte.nume_firma " _
                                     & "FROM obiecte_inventar LEFT JOIN niruri_obiecte ON obiecte_inventar.nir=niruri_obiecte.nir " _
@@ -241,7 +241,7 @@ Public Class Form_afiseaza_obinv
 
 
         End Using
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
             Try
                 dbconn.Open()
@@ -503,7 +503,7 @@ Public Class Form_afiseaza_obinv
 
     Private Sub Save_Bu_Click(sender As Object, e As EventArgs) Handles save_Bu.Click
 
-        'dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        'dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
         Dim nir As String = nir_TB.Text
         Dim dat As String = DateTimePicker1.Value
@@ -666,7 +666,7 @@ Public Class Form_afiseaza_obinv
         tva_TB.Text = tva
     End Sub
     Private Sub firma_TB_Leave(sender As Object, e As EventArgs) Handles firma_TB.Leave
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         If dbconn.State = ConnectionState.Closed Then
             dbconn.Open()
         End If
@@ -712,7 +712,7 @@ Public Class Form_afiseaza_obinv
                     Try
                         Dim dbconn As New MySqlConnection
 
-                        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                         If dbconn.State = 0 Then
                             dbconn.Open()
                         End If
