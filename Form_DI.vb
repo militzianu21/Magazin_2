@@ -40,7 +40,7 @@ Public Class Form_DI
         ComboBox3.DataSource = tb
 
 
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
         ComboBox1.Items.AddRange({"DI"})
         ComboBox1.SelectedItem = "DI"
@@ -221,7 +221,7 @@ Public Class Form_DI
                 explicatii_Textbox.Text = sql_del
                 Dim dbconn As New MySqlConnection
                 Dim dbcomm As New MySqlCommand
-                dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
                 If dbconn.State = 0 Then
                     dbconn.Open()
