@@ -29,7 +29,7 @@ Public Class Form_principal
         'If System.IO.Directory.Exists(AppDataFolder & "\Magazin") = False Then
         '    System.IO.Directory.CreateDirectory(AppDataFolder & "\Magazin")
         'End If
-        Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         Try
             If dbconn.State = 0 Then
                 dbconn.Open()
@@ -58,7 +58,7 @@ Public Class Form_principal
                 Try
                     'Dim dbconn As New MySqlConnection
 
-                    dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                    dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                     If dbconn.State = 0 Then
                         dbconn.Open()
                     End If
@@ -81,7 +81,7 @@ Public Class Form_principal
 
         Me.Text = "MAGAZIN"
 
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         Nonquery("CREATE DATABASE IF NOT EXISTS magazin")
 
         Nonquery("CREATE TABLE IF NOT EXISTS incasari (" _
@@ -341,7 +341,7 @@ Public Class Form_principal
     Public Sub Load_Setari()
         '-------------------- LOAD setari
 
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
         Try
             Dim set_sql As String = "SELECT * FROM setari WHERE setare='path_registru'"
@@ -484,7 +484,7 @@ Public Class Form_principal
             magazin = "AND incasari.magazin= '" & ComboBox3.SelectedValue & "'"
         End If
         ' -------------------- LOAD incasari INTO GRID
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -516,7 +516,7 @@ Public Class Form_principal
 
         '-------------- Statusuri
         If CheckBox1.CheckState = CheckState.Unchecked Then
-            Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                 Dim sda As New MySqlDataAdapter
                 Dim dbdataset As New DataTable
                 Dim bsource As New BindingSource
@@ -560,7 +560,7 @@ Public Class Form_principal
 
         Dim incas_total_cash As Decimal = 0 'an
         Dim incas_total_card As Decimal = 0 'an
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbtable As New DataTable
             Dim bsource As New BindingSource
@@ -636,7 +636,7 @@ Public Class Form_principal
             magazin = "AND magazin='" & ComboBox3.SelectedValue & "'"
             cash_true = "AND cash=TRUE"
         End If
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -670,7 +670,7 @@ Public Class Form_principal
         End Using
 
         Dim chelt_tot_luna As Decimal = 0
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -701,7 +701,7 @@ Public Class Form_principal
 
         '-------------------------
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
 
             Dim sold_prec As Decimal = sold_ini
@@ -821,7 +821,7 @@ Public Class Form_principal
             magazin = "AND magazin= '" & ComboBox3.SelectedValue & "'"
             cash_true = "AND cash=TRUE"
         End If
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -851,7 +851,7 @@ Public Class Form_principal
 
             ' ------- VERIFICARE SALARII -------------
 
-            Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                 Dim sda As New MySqlDataAdapter
                 Dim dbdataset As New DataTable
                 Dim bsource As New BindingSource
@@ -894,7 +894,7 @@ Public Class Form_principal
 
             '-----------------------------------^
             If CheckBox1.CheckState = CheckState.Unchecked Then
-                Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                     Dim sda As New MySqlDataAdapter
                     Dim dbdataset As New DataTable
                     Dim bsource As New BindingSource
@@ -929,7 +929,7 @@ Public Class Form_principal
 
         ' -------------------- LOAD cheltuieli INTO label
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -959,7 +959,7 @@ Public Class Form_principal
         End Using
         '-----------------------------------cheltuieli  AN
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -1048,7 +1048,7 @@ Public Class Form_principal
             an = "WHERE YEAR(data)= '" & ComboBox2.SelectedItem & "'"
             magazin = "AND magazin= '" & ComboBox3.SelectedValue & "'"
         End If
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -1109,7 +1109,7 @@ Public Class Form_principal
 
         ' -------------------- LOAD intrari INTO label
         Dim intrari_total_luna As Decimal = 0
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -1140,7 +1140,7 @@ Public Class Form_principal
         End Using
         '-----------------------------------intrari  AN
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -1176,7 +1176,7 @@ Public Class Form_principal
         ' -------------------- LOAD solduri INTO Textbox
         '----------------------luna
         Dim sold_ini As Decimal = 0
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -1217,7 +1217,7 @@ Public Class Form_principal
         End Using
 
         Dim ies_tot_luna As Decimal = 0
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -1268,7 +1268,7 @@ Public Class Form_principal
             an = "WHERE YEAR(data)= '" & ComboBox2.SelectedItem & "'"
             magazin = "AND magazin= '" & ComboBox3.SelectedValue & "'"
         End If
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -1325,7 +1325,7 @@ Public Class Form_principal
 
         ' -------------------- LOAD iesiri INTO label
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -1355,7 +1355,7 @@ Public Class Form_principal
         End Using
         '-----------------------------------intrari  AN
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -1407,7 +1407,7 @@ Public Class Form_principal
         Sold_Gestiune_DGV.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
 
         ' -------------------- LOAD solduri_casa INTO GRID
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -1494,7 +1494,7 @@ Public Class Form_principal
 
         ' -------------------- LOAD solduri_gestiune INTO GRID
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -1592,7 +1592,7 @@ Public Class Form_principal
         Cauta_firme_TB.BackColor = Color.MintCream
         Dim caut As String = Cauta_firme_TB.Text
         ' -------------------- LOAD firme INTO GRID
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -1636,7 +1636,7 @@ Public Class Form_principal
 
         Next
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
             'Dim tot_sql As String = "SELECT id,firma,forma_juridica,cui,j,adresa,tip,status,cont,banca FROM firme ORDER BY firma ASC"
             'Dim tot_sql As String = "SELECT SUM(suma) FROM cheltuieli WHERE explicatii LIKE '%" & caut & "%' OR cui LIKE '%" & caut & "%'"
@@ -1745,7 +1745,7 @@ Public Class Form_principal
         End If
         Dim prod As String = cauta_prod_TB.Text
         ' -------------------- LOAD firme INTO GRID
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -1768,7 +1768,7 @@ Public Class Form_principal
             DGV.Columns("id").Visible = False
             DGV.Columns("magazin").Visible = False
         Next
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -1886,7 +1886,7 @@ Public Class Form_principal
         'End If
         'Dim prod As String = cauta_prod_TB.Text
         ' -------------------- LOAD firme INTO GRID
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -1909,7 +1909,7 @@ Public Class Form_principal
         'For Each DataGridViewColumn In DGV.Columns
         '    DGV.Columns("id").Visible = False
         'Next
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -2087,7 +2087,7 @@ Public Class Form_principal
 
 
         ' -------------------- LOAD firme INTO GRID
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -2110,7 +2110,7 @@ Public Class Form_principal
             DGV.Columns("id").Visible = False
 
         Next
-        'Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        'Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         '    Dim sda As New MySqlDataAdapter
         '    Dim dbdataset As New DataTable
         '    Dim bsource As New BindingSource
@@ -2232,9 +2232,9 @@ Public Class Form_principal
 
         'Dim dbconn As New MySqlConnection
         Dim dbcomm As New MySqlCommand
-        'dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        'dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = 0 Then
                 dbconn.Open()
             End If
@@ -2294,7 +2294,7 @@ Public Class Form_principal
     Public Sub Load_Situatie()
         'ListBox1.Items.Clear()
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
             Dim sda As New MySqlDataAdapter
             Dim dbtable As New DataTable
@@ -2692,7 +2692,7 @@ Public Class Form_principal
         '----------------- SOLD GESTIUNE
 
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -2721,7 +2721,7 @@ Public Class Form_principal
         '----------------- SOLD BANCA
 
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -3209,7 +3209,7 @@ Public Class Form_principal
         ElseIf yesno = DialogResult.Yes Then
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = 0 Then
                 dbconn.Open()
             End If
@@ -3484,7 +3484,7 @@ Public Class Form_principal
 
         Dim dbconn As New MySqlConnection
         Dim dbcomm As New MySqlCommand
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         If dbconn.State = 0 Then
             dbconn.Open()
         End If
@@ -3526,7 +3526,7 @@ Public Class Form_principal
         ElseIf yesno = DialogResult.Yes Then
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = 0 Then
                 dbconn.Open()
             End If
@@ -3859,7 +3859,7 @@ Public Class Form_principal
 
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = 0 Then
                 dbconn.Open()
             End If
@@ -3898,7 +3898,7 @@ Public Class Form_principal
 
         Dim dbconn As New MySqlConnection
         Dim dbcomm As New MySqlCommand
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         If dbconn.State = 0 Then
             dbconn.Open()
         End If
@@ -3966,7 +3966,7 @@ Public Class Form_principal
 
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = 0 Then
                 dbconn.Open()
             End If
@@ -4031,7 +4031,7 @@ Public Class Form_principal
 
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
             If dbconn.State = 0 Then
                 dbconn.Open()
@@ -4101,7 +4101,7 @@ Public Class Form_principal
 
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = 0 Then
                 dbconn.Open()
             End If
@@ -4161,7 +4161,7 @@ Public Class Form_principal
 
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
             If dbconn.State = 0 Then
                 dbconn.Open()
@@ -4193,7 +4193,7 @@ Public Class Form_principal
     Private Sub Registru_Button_Click(sender As Object, e As EventArgs) Handles Registru_Button.Click
         '' -------------------- LOAD setari
 
-        'dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        'dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         'Dim folder_pdf As String = ""
         'Try
         '    Dim set_sql As String = "SELECT * FROM setari WHERE setare='path_registru'"
@@ -4208,7 +4208,7 @@ Public Class Form_principal
 
         '        If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
         '            Dim folder As String = System.IO.Path.GetDirectoryName(SaveFileDialog1.FileName) & "\"
-        '            Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        '            Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         '            Try
         '                If dbconn.State = 0 Then
         '                    dbconn.Open()
@@ -4665,7 +4665,7 @@ Public Class Form_principal
 
         Dim dbconn As New MySqlConnection
         Dim dbcomm As New MySqlCommand
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         If dbconn.State = 0 Then
             dbconn.Open()
         End If
@@ -4716,7 +4716,7 @@ Public Class Form_principal
         'ElseIf yesno = DialogResult.Yes Then
         Dim dbconn As New MySqlConnection
         Dim dbcomm As New MySqlCommand
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         If dbconn.State = 0 Then
             dbconn.Open()
         End If
@@ -4758,7 +4758,7 @@ Public Class Form_principal
         'ElseIf yesno = DialogResult.Yes Then
         Dim dbconn As New MySqlConnection
         Dim dbcomm As New MySqlCommand
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         If dbconn.State = 0 Then
             dbconn.Open()
         End If
@@ -5106,7 +5106,7 @@ Public Class Form_principal
         ElseIf yesno = DialogResult.Yes Then
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = 0 Then
                 dbconn.Open()
             End If
@@ -5478,7 +5478,7 @@ Public Class Form_principal
         ElseIf yesno = DialogResult.Yes Then
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = 0 Then
                 dbconn.Open()
             End If
@@ -5706,7 +5706,7 @@ Public Class Form_principal
         graph.DrawLine(pen, 20, 800, 401, 800)
         Dim nxtRow As Double = 23
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Try
                 If dbconn.State = ConnectionState.Closed Then
                     dbconn.Open()
@@ -5876,7 +5876,7 @@ Public Class Form_principal
         graph.DrawLine(pen, 20, 800, 401, 800)
         Dim nxtRow As Double = 23
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Try
                 If dbconn.State = ConnectionState.Closed Then
                     dbconn.Open()
@@ -6223,7 +6223,7 @@ Public Class Form_principal
                 Try
                     Dim dbconn As New MySqlConnection
 
-                    dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                    dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                     If dbconn.State = 0 Then
                         dbconn.Open()
                     End If
@@ -6275,7 +6275,7 @@ Public Class Form_principal
 
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = 0 Then
                 dbconn.Open()
             End If
@@ -6340,7 +6340,7 @@ Public Class Form_principal
             Try
                 Dim dbconn As New MySqlConnection
 
-                dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                 If dbconn.State = 0 Then
                     dbconn.Open()
                 End If
@@ -6502,7 +6502,7 @@ Public Class Form_principal
             End Try
 
             Dim AppDataFolder As String = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)
-            Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                 If dbconn.State = 0 Then
                     dbconn.Open()
                 End If
@@ -6569,7 +6569,7 @@ Public Class Form_principal
     End Sub
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
 
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbtable As New DataTable
             Dim bsource As New BindingSource
@@ -6707,7 +6707,7 @@ Public Class Form_principal
     End Sub
 
     Private Sub Curata_prod_BU_Click(sender As Object, e As EventArgs) Handles Curata_prod_BU.Click
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = ConnectionState.Closed Then
                 dbconn.Open()
             End If
@@ -6764,7 +6764,7 @@ Public Class Form_principal
         TextBox25.Text = Nothing
         TextBox32.Text = Nothing
         If buton.Location = Button2.Location Then
-            Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
                 Dim sda As New MySqlDataAdapter
                 Dim dbtable As New DataTable
@@ -6845,8 +6845,8 @@ Public Class Form_principal
 
         If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
             Dim folder As String = System.IO.Path.GetDirectoryName(SaveFileDialog1.FileName) & "\"
-            Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
-            Dim con As String = "server=localhost;user=root;pwd=me21s86;database=magazin;"
+            Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
+            Dim con As String = "server=localhost;user=root;pwd=*******;database=magazin;"
             Dim file As String = folder & "backup_" & dt_acum & ".sql"
             dbcomm = New MySqlCommand(con, dbconn)
             Dim mb As New MySqlBackup(dbcomm)
@@ -6870,7 +6870,7 @@ Public Class Form_principal
 
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
             If dbconn.State = 0 Then
                 dbconn.Open()
