@@ -55,7 +55,7 @@ Public Class Form_Registru
         ComboBox3.SelectedValue = Form_principal.ComboBox3.SelectedValue
 
 
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         Dim luna_reg As Date = Date.Parse(Date.DaysInMonth(ComboBox2.SelectedItem, ComboBox1.SelectedItem) & "." & ComboBox1.SelectedItem & "." & ComboBox2.SelectedItem)
         Dim luna_prec As Date = DateAdd(DateInterval.Month, -1, luna_reg)
         Dim data_ultima As Date = Date.Parse(Date.DaysInMonth(luna_prec.Year, luna_prec.Month) & "." & luna_prec.Month & "." & luna_prec.Year)
@@ -117,7 +117,7 @@ Public Class Form_Registru
     Private Sub print_But_Click(sender As Object, e As EventArgs) Handles print_But.Click
         ' -------------------- LOAD setari
 
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         Dim folder_pdf As String = ""
         Try
             Dim set_sql As String = "SELECT * FROM setari WHERE setare='path_registru'"
@@ -132,7 +132,7 @@ Public Class Form_Registru
 
                 If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
                     Dim folder As String = System.IO.Path.GetDirectoryName(SaveFileDialog1.FileName) & "\"
-                    Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                    Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                     Try
                         If dbconn.State = 0 Then
                             dbconn.Open()
@@ -603,7 +603,7 @@ Public Class Form_Registru
     Private Sub ComboBox_1_2_3_DropDownClosed(sender As Object, e As EventArgs) Handles ComboBox1.DropDownClosed, ComboBox2.DropDownClosed, ComboBox3.DropDownClosed
 
         Label1.Text = MonthName(ComboBox1.SelectedItem) & " " & ComboBox2.SelectedItem
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
         Dim luna_reg As Date = Date.Parse(Date.DaysInMonth(ComboBox2.SelectedItem, ComboBox1.SelectedItem) & "." & ComboBox1.SelectedItem & "." & ComboBox2.SelectedItem)
         Dim luna_prec As Date = DateAdd(DateInterval.Month, -1, luna_reg)
