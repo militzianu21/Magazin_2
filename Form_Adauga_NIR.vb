@@ -39,7 +39,7 @@ Public Class Form_adauga_nir
         'DataGridView1.Rows(0).Cells("chk").Value = False
         'DataGridView1.Rows(0).Cells("but").Value = "edit"
 
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
         Try
             Dim set_sql As String = "SELECT * FROM setari WHERE setare='tva'"
@@ -323,7 +323,7 @@ Public Class Form_adauga_nir
     End Sub
 
     Private Sub Save_Bu_Click(sender As Object, e As EventArgs) Handles save_Bu.Click
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
 
         Dim nir As String = nir_TB.Text
@@ -639,7 +639,7 @@ Public Class Form_adauga_nir
 
     Private Sub firma_TB_Leave(sender As Object, e As EventArgs) Handles firma_TB.Leave
         tva = tva
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         If dbconn.State = ConnectionState.Closed Then
             dbconn.Open()
         End If
@@ -696,7 +696,7 @@ Public Class Form_adauga_nir
                 Try
                     Dim dbconn As New MySqlConnection
 
-                    dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                    dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                     If dbconn.State = 0 Then
                         dbconn.Open()
                     End If
@@ -1032,7 +1032,7 @@ Public Class Form_adauga_nir
     Private Sub PrintNir_BU_Click(sender As Object, e As EventArgs) Handles PrintNir_BU.Click
         ' -------------------- LOAD setari
 
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         Dim folder_nir As String = ""
         Try
             Dim set_sql As String = "SELECT * FROM setari WHERE setare='path_nir'"
@@ -1047,7 +1047,7 @@ Public Class Form_adauga_nir
 
                 If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
                     Dim folder As String = System.IO.Path.GetDirectoryName(SaveFileDialog1.FileName) & "\"
-                    Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                    Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                     Try
                         If dbconn.State = 0 Then
                             dbconn.Open()
