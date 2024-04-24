@@ -16,7 +16,7 @@ Public Class Form_NIRuri
         'DGV.ScrollBars = ScrollBars.Vertical
         DGV.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
         DGV.AllowUserToAddRows = False
-        'dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        'dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
         'ComboBox3.DisplayMember = "Text"
         'ComboBox3.ValueMember = "Value"
@@ -125,7 +125,7 @@ Public Class Form_NIRuri
         Dim DGV As DataGridView = DataGridView1
         DGV.Columns.Clear()
 
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         Dim sql_tot As String = "SELECT * FROM " & tip_nir & " ORDER BY data DESC,nir DESC"
         Dim sda As New MySqlDataAdapter
         Dim dbdataset As New DataTable
@@ -194,7 +194,7 @@ Public Class Form_NIRuri
     End Sub
     Public Sub Load_niruri_obiecte()
         Dim DGV As DataGridView = DataGridView1
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         Dim sql_tot As String = "SELECT * FROM niruri_obiecte ORDER BY data DESC,nir DESC"
         Dim sda As New MySqlDataAdapter
         Dim dbdataset As New DataTable
@@ -278,7 +278,7 @@ Public Class Form_NIRuri
 
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
             If dbconn.State = ConnectionState.Closed Then
                 dbconn.Open()
