@@ -12,7 +12,7 @@ Public Class Form_setari
     Public AppDataFolder As String = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)
     Private Sub Form_setari_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' -------------------- LOAD setari INTO GRID
-        Using dbconn As New mysqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New mysqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New mysqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -60,7 +60,7 @@ Public Class Form_setari
                     Try
                         Dim dbconn As New MySqlConnection
 
-                        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                         If dbconn.State = 0 Then
                             dbconn.Open()
                     End If
@@ -84,7 +84,7 @@ Public Class Form_setari
 
     Private Sub Reload()
         ' -------------------- LOAD setari INTO GRID
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sda As New MySqlDataAdapter
             Dim dbdataset As New DataTable
             Dim bsource As New BindingSource
@@ -136,7 +136,7 @@ Public Class Form_setari
             Try
                 Dim dbconn As New MySqlConnection
 
-                dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                 If dbconn.State = 0 Then
                     dbconn.Open()
                 End If
