@@ -18,7 +18,7 @@ Public Class Form_gestiune
         DGV.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
         DGV.AllowUserToAddRows = False
 
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
         ComboBox3.DisplayMember = "Text"
         ComboBox3.ValueMember = "Value"
@@ -372,7 +372,7 @@ Public Class Form_gestiune
 
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
             If dbconn.State = 0 Then
                 dbconn.Open()
@@ -541,7 +541,7 @@ Public Class Form_gestiune
             Try
                 Dim dbconn As New MySqlConnection
 
-                dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                 If dbconn.State = 0 Then
                     dbconn.Open()
                 End If
@@ -608,7 +608,7 @@ Public Class Form_gestiune
 
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = 0 Then
                 dbconn.Open()
             End If
@@ -680,7 +680,7 @@ Public Class Form_gestiune
 
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = 0 Then
                 dbconn.Open()
             End If
