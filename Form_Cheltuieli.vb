@@ -12,7 +12,7 @@ Public Class Form_cheltuieli
     Public dbread As MySqlDataReader
     Public AppDataFolder As String = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)
     Public folder_dp As String
-    Public dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+    Public dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "Cheltuieli"
@@ -438,7 +438,7 @@ Public Class Form_cheltuieli
 
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = 0 Then
                 dbconn.Open()
             End If
@@ -602,7 +602,7 @@ Public Class Form_cheltuieli
     End Sub
     Private Sub PrinteazaDPToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrinteazaDPToolStripMenuItem.Click
         '----------setari
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
 
         If dbconn.State = ConnectionState.Closed Then
             dbconn.Open()
@@ -938,7 +938,7 @@ Public Class Form_cheltuieli
             Try
                 Dim dbconn As New MySqlConnection
 
-                dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+                dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
                 If dbconn.State = 0 Then
                     dbconn.Open()
                 End If
@@ -1011,7 +1011,7 @@ Public Class Form_cheltuieli
 
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = 0 Then
                 dbconn.Open()
             End If
@@ -1061,7 +1061,7 @@ Public Class Form_cheltuieli
 
         Dim dbconn As New MySqlConnection
         Dim dbcomm As New MySqlCommand
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         If dbconn.State = 0 Then
             dbconn.Open()
         End If
@@ -1110,7 +1110,7 @@ Public Class Form_cheltuieli
 
         Dim dbconn As New MySqlConnection
         Dim dbcomm As New MySqlCommand
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         If dbconn.State = 0 Then
             dbconn.Open()
         End If
