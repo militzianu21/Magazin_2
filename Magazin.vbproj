@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35A18981-72C1-44A6-B52E-26DFB469227F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Magazin.My.MyApplication</StartupObject>
+    <RootNamespace>Magazin</RootNamespace>
+    <AssemblyName>Magazin</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Magazin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Magazin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MigraDoc.DocumentObjectModel">
+      <HintPath>..\..\..\..\..\Desktop\Visual Basic\PDFsharp-MigraDocFoundation-Assemblies-1_32\GDI+\MigraDoc.DocumentObjectModel.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering">
+      <HintPath>..\..\..\..\..\Desktop\Visual Basic\PDFsharp-MigraDocFoundation-Assemblies-1_32\GDI+\MigraDoc.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.RtfRendering">
+      <HintPath>..\..\..\..\..\Desktop\Visual Basic\PDFsharp-MigraDocFoundation-Assemblies-1_32\GDI+\MigraDoc.RtfRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySqlBackup">
+      <HintPath>..\..\..\..\..\Desktop\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>..\..\..\..\..\Desktop\Visual Basic\PDFsharp-MigraDocFoundation-Assemblies-1_32\GDI+\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting">
+      <HintPath>..\..\..\..\..\Desktop\Visual Basic\PDFsharp-MigraDocFoundation-Assemblies-1_32\GDI+\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_Inventar.Designer.vb">
+      <DependentUpon>Form_Inventar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Inventar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Adauga_ObInv.Designer.vb">
+      <DependentUpon>Form_Adauga_ObInv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Adauga_ObInv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Afiseaza_ObInv.Designer.vb">
+      <DependentUpon>Form_Afiseaza_ObInv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Afiseaza_ObInv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Bon.Designer.vb">
+      <DependentUpon>Form_Bon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Bon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Factura.Designer.vb">
+      <DependentUpon>Form_Factura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Factura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_aleg_Plata.Designer.vb">
+      <DependentUpon>Form_aleg_Plata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_aleg_Plata.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_verif_gestiune.Designer.vb">
+      <DependentUpon>Form_verif_gestiune.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_verif_gestiune.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Afiseaza_NIR.Designer.vb">
+      <DependentUpon>Form_Afiseaza_NIR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Afiseaza_NIR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Adauga_NIR.Designer.vb">
+      <DependentUpon>Form_Adauga_NIR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Adauga_NIR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_inc_transfera.Designer.vb">
+      <DependentUpon>Form_inc_transfera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_inc_transfera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_NIRuri.Designer.vb">
+      <DependentUpon>Form_NIRuri.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_NIRuri.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Aviz.Designer.vb">
+      <DependentUpon>Form_Aviz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Aviz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Firme_introd.Designer.vb">
+      <DependentUpon>Form_Firme_introd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Firme_introd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Raport.Designer.vb">
+      <DependentUpon>Form_Raport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Raport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Gestiune.Designer.vb">
+      <DependentUpon>Form_Gestiune.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Gestiune.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_input.Designer.vb">
+      <DependentUpon>Form_input.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_input.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PRINCIPAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PRINCIPAL.Designer.vb">
+      <DependentUpon>Form_PRINCIPAL.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DI.Designer.vb">
+      <DependentUpon>Form_DI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Incasari.Designer.vb">
+      <DependentUpon>Form_Incasari.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Incasari.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Cheltuieli.Designer.vb">
+      <DependentUpon>Form_Cheltuieli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Cheltuieli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Registru.Designer.vb">
+      <DependentUpon>Form_Registru.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Registru.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Setari.Designer.vb">
+      <DependentUpon>Form_Setari.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Setari.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_verif_casa.Designer.vb">
+      <DependentUpon>Form_verif_casa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_verif_casa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Functii.vb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form_Inventar.resx">
+      <DependentUpon>Form_Inventar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Adauga_ObInv.resx">
+      <DependentUpon>Form_Adauga_ObInv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Afiseaza_ObInv.resx">
+      <DependentUpon>Form_Afiseaza_ObInv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Bon.resx">
+      <DependentUpon>Form_Bon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Factura.resx">
+      <DependentUpon>Form_Factura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_aleg_Plata.resx">
+      <DependentUpon>Form_aleg_Plata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_verif_gestiune.resx">
+      <DependentUpon>Form_verif_gestiune.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Afiseaza_NIR.resx">
+      <DependentUpon>Form_Afiseaza_NIR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Adauga_NIR.resx">
+      <DependentUpon>Form_Adauga_NIR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_inc_transfera.resx">
+      <DependentUpon>Form_inc_transfera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_NIRuri.resx">
+      <DependentUpon>Form_NIRuri.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Aviz.resx">
+      <DependentUpon>Form_Aviz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Firme_introd.resx">
+      <DependentUpon>Form_Firme_introd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Raport.resx">
+      <DependentUpon>Form_Raport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Gestiune.resx">
+      <DependentUpon>Form_Gestiune.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_input.resx">
+      <DependentUpon>Form_input.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PRINCIPAL.resx">
+      <DependentUpon>Form_PRINCIPAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DI.resx">
+      <DependentUpon>Form_DI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Incasari.resx">
+      <DependentUpon>Form_Incasari.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Cheltuieli.resx">
+      <DependentUpon>Form_Cheltuieli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Registru.resx">
+      <DependentUpon>Form_Registru.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Setari.resx">
+      <DependentUpon>Form_Setari.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_verif_casa.resx">
+      <DependentUpon>Form_verif_casa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_check_buttonless_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_unchecked_enabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_checked_enabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_plus_default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_input_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report-arrow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A26-CurvedArrow-Orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_query.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_close_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\record_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\record_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folderOpened.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_ok.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.104.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.104.0\build\net45\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.104.0\build\net45\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.104.0\build\net45\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
