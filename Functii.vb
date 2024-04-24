@@ -14,9 +14,9 @@ Imports System.Globalization
 Module Functii
 
     Public Sub Nonquery(ByVal sql As String)
-        Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Dim dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         Try
-            'Using dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            'Using dbconn As MySqlConnection = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = 0 Then
                 dbconn.Open()
             End If
@@ -288,7 +288,7 @@ Module Functii
     End Sub
     Public Sub Import_Extras(ByVal XmlPath As String)
         Dim AppDataFolder As String = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             '        Dim dbread As System.Data.SQLite.SQLiteDataReader
             If dbconn.State = 0 Then
                 dbconn.Open()
