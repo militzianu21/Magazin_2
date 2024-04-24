@@ -24,7 +24,7 @@ Public Class Form_Incasari
         DGV.ScrollBars = ScrollBars.Vertical
         DGV.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
         DGV.AllowUserToAddRows = False
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         '------------------
         If dbconn.State = ConnectionState.Closed Then
             dbconn.Open()
@@ -140,7 +140,7 @@ Public Class Form_Incasari
         End If
         Dim anul_ult As Integer = data_ult.Year
         Dim luna_ult As Integer = data_ult.Month
-        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        Using dbconn As New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             Dim sql_tot As String = "SELECT id,data,nr_rzf,tip_incasare,explicatii,suma_cash as Cash,suma_card as POS,magazin FROM incasari WHERE magazin='" & ComboBox3.SelectedValue & "' " & limit & " ORDER BY incasari.data DESC,incasari.id DESC"
             'Dim sql_tot As String = "SELECT * FROM incasari ORDER BY incasari.data DESC"
             Dim sda As New MySqlDataAdapter
@@ -517,7 +517,7 @@ Public Class Form_Incasari
         ElseIf yesno = DialogResult.Yes Then
             Dim dbconn As New MySqlConnection
             Dim dbcomm As New MySqlCommand
-            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+            dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
             If dbconn.State = 0 Then
                 dbconn.Open()
             End If
@@ -709,7 +709,7 @@ Public Class Form_Incasari
 
         Dim dbconn As New MySqlConnection
         Dim dbcomm As New MySqlCommand
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         If dbconn.State = 0 Then
             dbconn.Open()
         End If
@@ -984,7 +984,7 @@ Public Class Form_Incasari
 
         Dim dbconn As New MySqlConnection
         Dim dbcomm As New MySqlCommand
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         If dbconn.State = 0 Then
             dbconn.Open()
         End If
@@ -1062,7 +1062,7 @@ Public Class Form_Incasari
 
         Dim dbconn As New MySqlConnection
         Dim dbcomm As New MySqlCommand
-        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=me21s86;port=3306;database=magazin")
+        dbconn = New MySqlConnection("Data Source=localhost;user id=root;password=*******;port=3306;database=magazin")
         If dbconn.State = 0 Then
             dbconn.Open()
         End If
